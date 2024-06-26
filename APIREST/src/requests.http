@@ -1,0 +1,32 @@
+###
+POST http://localhost:10000/api/users http/1.1
+content-type: application/json
+
+
+{
+    "name": "ursula bent",
+    "password": "ttedtlijmlsiw",
+    "email": "ursu@email.com",
+    "cedula": 1040321987
+}
+
+###
+GET http://localhost:10000/api/users http/1.1
+
+###
+GET http://localhost:10000/api/users/667b87d3d1257f591d4f97c1 http/1.1
+
+###
+PUT  http://localhost:10000/api/users/667b79a14030507304202320 http/1.1
+content-type: application/json
+
+
+{
+    "name": "Rosa nelda",
+    "password": "1aaaa222",
+    "email": "rosann@email.com",
+    "cedula": 56892354
+}
+
+###
+DELETE Http://localhost:10000/api/users/667b830e47cea82fe47f5254 http/1.1
